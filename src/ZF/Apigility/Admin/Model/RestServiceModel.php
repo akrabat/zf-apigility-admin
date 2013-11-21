@@ -626,6 +626,7 @@ class RestServiceModel implements EventManagerAwareInterface
             $entityClass => array(
                 'identifier_name' => $details->identifierName,
                 'route_name'      => $routeName,
+                'hydrator'        => 'Zend\Stdlib\Hydrator\ArraySerializable',
             ),
             $collectionClass => array(
                 'identifier_name' => $details->identifierName,
